@@ -1,2 +1,59 @@
-# brute-force-attack-simulation
-Brute force attack simulation using Hydra and Crunch in a lab environment
+# Brute Force Attack Simulation (Hydra + Crunch)
+
+## Objective
+To simulate a brute-force attack using Hydra with a custom-generated wordlist.
+
+## Tools Used
+- Hydra
+- Crunch
+- Kali Linux
+- Metasploitable
+
+## Target
+- Service: FTP
+- IP Address: 192.168.222.131
+
+## Methodology
+
+### Wordlist Generation
+crunch 5 8 -o wordlist.txt
+
+### Attack Execution
+hydra -l msfadmin -P wordlist.txt ftp://192.168.222.131
+
+## Command Breakdown
+1.  `-l` : specifies the username
+2.  `-P` : specifies the password wordlist
+3.  `ftp://` : defines the target service  
+
+## Results
+- Hydra executed multiple login attempts using the provided wordlist
+- Initial attempts resulted in failed logins
+- A valid credential pair was successfully discovered:
+
+  Username: msfadmin  
+  Password: msfadmin  
+
+- This confirms that the target system is vulnerable to brute-force attacks due to weak authentication credentials
+
+## Screenshots
+
+### Wordlist
+![Wordlist](screenshots/wordlist.png)
+
+### Hydra Attack
+![Hydra](screenshots/hydra-run.png)
+
+### Successful Login
+![Success](screenshots/success.png)
+
+## Attack Summary
+A brute-force attack was performed against an FTP service using Hydra with both a custom-generated wordlist and a common password dataset. Multiple failed login attempts were observed before successfully identifying valid credentials.
+
+## Mitigation
+- Use strong passwords  
+- Enable account lockout  
+- Implement multi-factor authentication  
+
+## Conclusion
+This lab demonstrates how weak credentials can be compromised using brute-force attacks.

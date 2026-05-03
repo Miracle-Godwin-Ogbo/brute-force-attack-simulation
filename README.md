@@ -39,12 +39,12 @@ hydra -l msfadmin -P wordlist.txt ftp://192.168.222.131
 ## Screenshots
 
 ### Wordlist
-![Wordlist](screenshots/wordlist.png)
+![Wordlist](screenshots_wordlist.png)
 
 ![Hydra](screenshots_wordlists.png)
 
 ### Hydra Attack
-![Hydra](screenshots/hydra-run.png)
+![Hydra](screenshots_hydra-run.png)
 
 ### Successful Login
 ![Success](screenshots/success.png)

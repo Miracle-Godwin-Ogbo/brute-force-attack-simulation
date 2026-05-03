@@ -22,9 +22,9 @@ crunch 5 8 -o wordlist.txt
 hydra -l msfadmin -P wordlist.txt ftp://192.168.222.131
 
 ## Command Breakdown
-1.  `-l` : specifies the username
-2.  `-P` : specifies the password wordlist
-3.  `ftp://` : defines the target service  
+-  `-l` : specifies the username
+-  `-P` : specifies the password wordlist
+-   `ftp://` : defines the target service  
 
 ## Results
 - Hydra executed multiple login attempts using the provided wordlist

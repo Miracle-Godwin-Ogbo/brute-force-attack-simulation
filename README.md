@@ -64,5 +64,5 @@ This lab demonstrates how weak credentials can be compromised using brute-force 
 
 ## Disclaimer
 
-All activities, scans, exploitations, and simulations demonstrated in this repository were conducted in a controlled lab environment for educational and ethical purposes only. The target systems used were intentionally vulnerable systems owned or authorized for testing. Unauthorized testing against real-world systems is illegal and unethical.
+All activities, scans, exploitations, and simulations demonstrated in this repository were conducted in a controlled lab environment for educational and ethical purposes only. The target systems used were intentionally vulnerable systems owned for testing. Unauthorized testing against real-world systems is illegal and unethical.
 

